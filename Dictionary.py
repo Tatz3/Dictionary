@@ -1,6 +1,6 @@
 class Dictionary():
     """
-        Deutsch-English Wörterbuch zur Übersetzung von Wörtern
+    Deutsch-English Wörterbuch zur Übersetzung von Wörtern
     """
 
     def __init__(self):
@@ -14,7 +14,7 @@ class Dictionary():
 
     def show_instructions(self):
         """
-            Zeigt die Anweisungen für die Verwendung des Wörterbuchs an.
+        Zeigt die Anweisungen für die Verwendung des Wörterbuchs an.
         """
         print("Willkommen zum Deutsch-Englisch Wörterbuch!")
         print("Folgende Optionen stehen zur Verfügung:")
@@ -24,7 +24,7 @@ class Dictionary():
 
     def add_new_word(self):
         """
-            Hier definieren wir wie das Hinzufügen einer neuen Übersetzung funktioniert
+        Hier definieren wir wie das Hinzufügen einer neuen Übersetzung funktioniert
         """
         german_word = input("Bitte gib das deutsche Wort ein")
         english_word = input("Bitte gib das englische Wort ein")
@@ -33,7 +33,7 @@ class Dictionary():
 
     def find_translation(self, word):
         """
-            Hier wird die Suche der jeweiligen Übersetzung definiert
+        Hier wird die Suche der jeweiligen Übersetzung definiert
         """
         if word in self.entries:
             print(f"{word} - {self.entries[word]}")
@@ -45,7 +45,7 @@ class Dictionary():
 
     def run(self):
         """
-            startet das Wörterbuch und ermöglicht die Interaktion mit dem Nutzer
+        startet das Wörterbuch und ermöglicht die Interaktion mit dem Nutzer
         """
         self.show_instructions()
 
